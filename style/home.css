@@ -1,0 +1,1033 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background-color: #222;
+    z-index: 100000;
+
+
+}
+.nav h2{
+    color: wheat;
+    font-size: 1.7rem;
+}
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#item li{
+    list-style: none;
+    padding-right: 50px;
+
+}
+#item li a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: wheat;
+    cursor: pointer;
+}
+#item li a:hover{
+    color: orange;
+}
+ #item .icon i{
+    color: wheat;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+
+#item .icon i:hover{
+    color: orange;
+}
+
+
+
+#bar{
+    color: wheat;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.backg{
+    background-image: url(../media/backg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+
+.backg .over{
+    background-color: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.84;
+
+}
+ .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.middle p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+
+}
+.middle h2{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.middle .btn{
+    margin-top: 2rem;
+}
+.middle .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.middle .btn a.first{
+    color: white;
+    font-weight: bold;
+    padding: 0.9rem 1.6rem;
+}
+.middle .btn a.first:hover{
+    color: #ff5733;
+    
+}
+
+.middle .btn a.second{
+    color: #ff5733;
+    border: 1px solid #ff5733;
+    font-weight: bold;
+    padding: 0.9rem 1.6rem;
+    border-radius: 6px;
+}
+.middle .btn a.second:hover{
+    background-color: white;
+    border-color:  white;
+
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 16rem;
+    background-color: #171819;
+}
+
+.details h3,h6,h5{
+    color: white;
+    
+}
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+
+}
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight:400;
+    padding-bottom: 1.2rem;
+}
+.details .one p{
+    color: #666262;
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+}
+.details .one a{
+   color: white;
+   text-decoration: none;
+   background-color: #f13a11;
+   padding: 12px 0;
+   text-transform: uppercase;
+   text-align: center;
+   transition: background-color 0.25s, color 0.25s;
+}
+.details .one a:hover{
+    background-color: white;
+    color: #f13a11;
+}
+.details .two{
+    width: 45%;
+    border-left: 2px solid #666262;
+    padding-left: 4rem;
+    
+}
+.details .two h3{
+    font-size: 2.5rem;
+   
+}
+.details .two h5{
+    font-size: 1.1rem;
+}
+.details .two p{
+    font-size: 1.1rem;
+    color: #666262;
+    margin-bottom: 0.8rem;
+}
+
+/* proffesionals */
+
+.train{
+    background-color: #f9f9f9;
+    padding: 128px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.train .about{
+    width: 40%;
+}
+.train .about h2{
+    color: #0d0d0d;
+    font-size: 2.1rem;
+    padding-bottom: 1.7rem;
+
+}
+.train .about p{
+    color: #505353;
+    font-size: 1.1rem;
+
+}
+.train .proff{
+    width: 57%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.train .proff .trainer1{
+    width: 45%;
+    vertical-align: top;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01),
+    0 4.4px 10px rgba(0, 0, 0, 0.015), 0 10.6px 24.1px rgba(0, 0, 0, 0.02),
+    0 35px 80px rgba(0, 0, 0, 0.03);
+}
+.train .proff .trainer1 .image img{
+width: 100%;
+object-fit: cover;
+}
+
+.train .proff .trainer1 .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.train .proff .trainer1 .name{
+    padding: 5px 21px 0 21px;
+}
+
+.train .proff .trainer1 .trainer_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 11px;
+}
+
+.train .proff .trainer1 .name h4{
+    color: #212529;
+    font-size: 1.4rem;
+}
+
+.train .proff .trainer1 .name i{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+
+.train .proff .trainer1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.train .proff .trainer1 .pro i{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+.train .proff .trainer1 .pro{
+    padding: 0 21px 5px 21px;
+}
+
+.train .proff .trainer1 .pro p{
+    color: #212529;
+}
+
+/*programs*/
+
+.session{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 8rem;
+}
+ .session .paragraph{
+    font-size: 21px;
+    color: #95a5a6;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.session .head{
+    font-size: 36px;
+    color: #222;
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.session .cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: top;
+    
+}
+.session .cart  .trainer1{
+    width: 32%;
+    
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01),
+    0 4.4px 10px rgba(0, 0, 0, 0.015), 0 10.6px 24.1px rgba(0, 0, 0, 0.02),
+    0 35px 80px rgba(0, 0, 0, 0.03);
+}
+.session .cart .trainer1 .image img{
+width: 100%;
+object-fit: cover;
+}
+
+.session .cart .trainer1 .trainer_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 11px;
+}
+.session .cart .trainer1 .trainer_info .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 31px 0 31px;
+}
+
+.session .cart .trainer1 .trainer_info .name .namedetails h4{
+    color: #212529;
+    font-size: 28px;
+}
+.session .cart .trainer1 .trainer_info .name .namedetails p{
+    color: #212529;
+    font-size: 18px;
+}
+
+.session .cart .trainer1 .trainer_info .name .namedetails p span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.session .cart .trainer1 .trainer_info .name .num h5{
+    font-size: 16px;
+    background-color: #f13a11;
+    width: 4.15rem;
+    height: 4.15rem;
+    line-height: 4.15rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.session .cart .trainer1 .pro{
+    padding: 16px 31px 31px 31px;
+}
+.session .cart .trainer1 .pro p{
+    color: #666262;
+    font-size: 18px;
+}
+
+
+/* contact form*/
+.contact{
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.contact .form {
+    width: 45%;
+}
+
+.contact .form h2{
+    font-size: 32px;
+    color: #212529;
+    padding-bottom: 11px;
+    width: 100%;
+
+}
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.contact .form .submit input, textarea{
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin: 14px 0;
+}
+.contact .form .submit input:focus, textarea:focus{
+    border: 1px solid #0d0d0d;
+}
+
+.contact .form .submit input::placeholder{
+    color: #7f8c8d;
+    font-size: 18px;
+
+}
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 18px;
+    height: 80%;
+}
+.contact .form .submit button{
+    width: 100%;
+    padding: 16px 0;
+    text-decoration: none;
+    background-color: #ffb74d;
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+    margin: 14px 0;
+    border:none;
+
+}
+.contact .form .submit .message{
+    margin: 10px 2px;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #fafafa;
+    color: #3e3e3e;
+    text-transform: capitalize;
+}
+
+.contact .map{
+    width: 45%;
+}
+
+.contact .map h2{
+    font-size: 32px;
+    color: #212529;
+    padding-bottom: 11px;
+    width: 100%;
+}
+
+.contact .map p{
+    font-size: 18px;
+    color: #212529;
+    padding-bottom: 32px;
+    width: 100%;
+}
+
+.contact .map p i{
+    color: red;
+    padding-right: 5px;
+}
+.contact .map iframe{
+    width: 100%;
+}
+
+/*footer*/
+.footer{
+    border-top: 1px solid #ecf0f1;
+    padding: 80px 128px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer p{
+    color: #7f8c8d;
+    justify-content: flex-start;
+
+}
+.footer p i{
+    color: red;
+    padding-right: 5px;
+}
+
+/* media query*/
+@media screen and (max-width: 1042px){
+
+  
+.nav{
+    
+    padding: 1rem 4.5rem;
+    
+
+
+}
+.nav h2{
+   
+    font-size: 1.3rem;
+}
+
+#item li{
+  
+    padding-right: 20px;
+
+}
+#item li a{
+    font-size: 0.7rem;
+}
+#item li a:hover{
+    color: orange;
+}
+ #item .icon i{
+ 
+    padding-right: 10px;
+  
+}
+}
+
+@media screen and (max-width: 991px){
+    
+.nav{
+    
+    padding: 1rem 3rem;
+
+}
+.nav h2{
+   
+    font-size: 1.5rem;
+}
+#item{
+   
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 100000;
+    margin-top: 4.2rem;
+    transition: 0.4s;
+}
+#item li{
+    
+  
+    padding: 5px 0;
+
+}
+#item li a{
+    font-size: 1.3rem;
+    cursor: pointer;
+
+}
+
+#item .icon{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+ #item .icon i{
+    padding: 0 15px;
+}
+
+
+
+#bar{
+   
+    display: initial;
+    cursor: pointer;
+}
+
+
+
+.middle p{
+    
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+
+}
+.middle h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.middle .btn{
+    margin-top: 1.3rem;
+}
+.middle .btn a{
+    font-size: 0.7rem;
+}
+.middle .btn a.first{
+    padding: 0.6rem 1.3rem;
+}
+
+
+.middle .btn a.second{
+    
+    padding: 0.6rem 1.3rem;
+}
+
+.details{
+    padding: 5rem 7rem;
+}
+
+
+.details .one{
+    width: 51%;
+}
+.details .one h3{
+    font-size: 1.8rem;
+    padding-bottom: 0.9rem;
+
+}
+
+.details .one p{
+    
+    font-size: 1rem;
+    padding-bottom: 2.1rem;
+}
+.details .one a{
+    font-size: 0.7rem;
+
+}
+
+
+.details .two{
+    padding-left: 3rem;
+    
+}
+.details .two h3{
+    font-size: 1.9rem;
+   
+}
+.details .two h5{
+    font-size: 0.9rem;
+}
+.details .two p{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.train{
+    
+    padding: 97px 112px;
+   
+}
+
+.train .about h2{
+    font-size: 1.9rem;
+    padding-bottom: 1.3rem;
+
+}
+.train .about p{
+    font-size: 0.9rem;
+
+}
+
+.train .proff .trainer1{
+    width: 48%;
+}
+
+
+
+.train .proff .trainer1 .name{
+    padding: 5px 13px 0 13px;
+}
+
+
+.train .proff .trainer1 .name h4{
+    font-size: 1rem;
+}
+
+.train .proff .trainer1 .name i{
+    font-size: 1rem;
+}
+
+.train .proff .trainer1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.train .proff .trainer1 .pro i{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+.train .proff .trainer1 .pro{
+    padding: 0 14px 5px 14px;
+}
+
+
+.session{
+    padding: 6rem;
+}
+ .session .paragraph{
+    font-size: 1rem;
+    padding-bottom: 3px;
+   
+}
+.session .head{
+    font-size: 30px;
+    padding-bottom: 29px;
+}
+
+.session .cart .trainer1 .trainer_info{
+    padding-bottom: 7px;
+}
+.session .cart .trainer1 .trainer_info .name{
+    padding: 5px 14px 0 14px;
+}
+
+.session .cart .trainer1 .trainer_info .name .namedetails h4{
+    font-size: 18px;
+}
+.session .cart .trainer1 .trainer_info .name .namedetails p{
+    font-size: 15px;
+}
+
+.session .cart .trainer1 .trainer_info .name .namedetails p span{
+    font-size: 15px;
+}
+
+.session .cart .trainer1 .trainer_info .name .num h5{
+    font-size: 13px;
+   
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+}
+
+.session .cart .trainer1 .pro{
+    padding: 16px 14px 31px 14px;
+}
+.session .cart .trainer1 .pro p{
+    font-size: 15px;
+}
+
+.contact{
+    padding: 95px;
+}
+
+.contact .form h2{
+    font-size: 32px;
+    padding-bottom: 6px;
+    
+
+}
+
+.contact .form .submit input, textarea{
+    padding: 10px;
+    margin: 9px 0;
+}
+
+
+.contact .form .submit input::placeholder{
+    font-size: 15px;
+
+}
+.contact .form .submit textarea::placeholder{
+    font-size: 15px;
+}
+.contact .form .submit a{
+    padding: 12px 0;
+    font-size: 15px;
+    margin: 9px 0;
+
+}
+
+.contact .map h2{
+    font-size: 30px;
+    padding-bottom: 6px;
+}
+
+.contact .map p{
+    font-size: 15px;
+    padding-bottom: 19px;
+}
+
+.footer{
+    padding: 95px;
+
+}
+
+
+}
+
+@media screen and (max-width: 768px){
+
+.nav h2{
+    font-size: 1.4rem;
+}
+.backg{
+    background-position: center;
+}
+
+.middle p{ 
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.middle h2{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+}
+.middle .btn{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle .btn a.first{
+    padding: 0.6rem 1.3rem;
+    margin-bottom:5px;
+}
+
+.middle .btn a.second{
+    
+    padding: 0.6rem 1.3rem;
+}
+
+.details{
+    padding: 4rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.details .one{
+    width: 71%;
+}
+
+.details .one a{
+    font-size: 1rem;
+
+}
+
+
+.details .two{
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid #666262;
+    width: 70%;
+    margin-top: 20px;
+    padding-top: 19px;
+    
+}
+.train{
+    
+    padding: 79px 30px;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.train .about{
+    width: 69%;
+    margin-bottom: 30px;
+}
+
+.train .about p{
+    font-size: 0.9rem;
+
+}
+
+.train .proff{
+    width: 70%;
+
+}
+
+
+.session{
+    padding: 6rem;
+}
+
+.session .cart{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.session .cart .trainer1{
+    width: 80%;
+    margin-bottom: 29px;
+}
+
+.contact{
+    padding: 79px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .form{
+    width: 73%;
+    margin-bottom: 25px;
+}
+
+.contact .form h2{
+    font-size: 43px;
+}
+
+.contact .map{
+    width: 80%;
+}
+
+.footer{
+    padding: 78px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    padding: 10px;
+}
+
+}
+
+@media screen and (max-width: 496px){
+
+
+
+.middle p{  
+    margin-bottom: 8px;
+}
+.middle h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.middle .btn{
+    margin-top: 9px;
+}
+
+.details{
+    padding: 3rem 1rem;
+   
+}
+.details .one{
+    width: 90%;
+}
+.details .two{
+    width: 90%;
+}
+.train{
+    padding: 60px 14px;
+}
+
+.train .about{
+    width: 90%;
+}
+
+.train .about p{
+    font-size: 0.9rem;
+
+}
+
+.train .proff{
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.train .proff .trainer1{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.session{
+    padding: 4rem 1rem;
+}
+
+
+.session .cart .trainer1{
+    width: 90%;
+}
+
+.contact{
+    padding: 60px 15px;
+}
+
+.contact .form{
+    width: 93%;
+}
+
+
+.contact .map{
+    width: 90%;
+}
+
+.footer{
+    padding: 78px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    padding: 10px;
+}
+
+}
